@@ -368,16 +368,62 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
+        <!-- is-hidden -->
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="icon-close">
-                    <use href=".//images/close-icon.svg#icon-close"></use>
+                    <use href=".//images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <form action="#" class="form-padding">
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="modal-field">
+                    <label class="form-label"><span class="label-text">Имя</span>
+                        <span class="input-wrap">
+                        <input class="form-input"
+                        type="text"
+                        name="user-name"
+                        >
+                        <svg class="form-icons">
+                            <use href="./images/symbol-defs.svg#icon-user-name-icon"></use>
+                        </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label class="form-label"><span class="label-text">Телефон</span>
+                        <span class="input-wrap">
+                        <input class="form-input"type="tel"
+                        name="user-tel"
+                        >
+                        <svg class="form-icons">
+                            <use href="./images/symbol-defs.svg#icon-user-phone-icon"></use>
+                        </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label class="form-label"><span class="label-text">Почта</span>
+                        <span class="input-wrap">
+                            <input class="form-input"type="email"
+                        name="user-email"
+                        >
+                            <svg class="form-icons">
+                            <use href="./images/symbol-defs.svg#icon-user-mail-icon"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label class="form-label"><span class="label-text">Комментарий</span>
+                    <textarea class=" form-textarea " name="comment " placeholder="Введите текст"></textarea>
+                </label>
+                </div>
+            </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js "></script>
 </body>
 
 </html>
