@@ -46,7 +46,10 @@ ol {
     padding-right: 15px;
     width: 1200px;
 }
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
     height: 1px;
     overflow: hidden;
     border: 0;
@@ -54,6 +57,7 @@ ol {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
 .hero-container {
     margin: auto;
     padding-left: 15px;
@@ -208,11 +212,13 @@ height="16" width="10" */
 
 /* 
 .icon-mail::before {
+background-image: url(../images/icons-header/icon-mail.svg);
 }
 
 .icon-phone::before {
 background-image: url(../images/icons-header/icon-tel.svg);
 height: 16px;
+width: 10px;
 } */
 
 .accent-color {
@@ -326,9 +332,6 @@ height: 16px;
     padding-top: 94px;
     padding-bottom: 47px;
 }
-
-    visibility: hidden;
-    width: 0;
 
 .advantage-title {
     font-style: normal;
