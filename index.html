@@ -59,7 +59,7 @@
         <!-- преимущества -->
         <section class="section-f-s-p-b">
             <div class="container">
-                <h2 class="hidden-title">преимущества</h2>
+                <h2 class="visually-hidden">преимущества</h2>
                 <ul class="advantage-flex">
                     <li class="advantage-list-item antenna ">
                         <h3 class="advantage-title ">Внимание к деталям</h3>
@@ -366,10 +366,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form">
+                <b class="join">Подпишитесь на рассылку</b>
+                <form action="#">
+                    <input class="footer-form-input" type="email" placeholder="E-mail">
+                
+                    <button type="submit" class="footer-button-submit"><span class="footer-button-text"> Подписаться</span> <span>
+                        <svg class="send-icon">
+                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
         </div>
     </footer>
-    <div class="backdrop " data-modal>
-        <!-- is-hidden -->
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="icon-close">
@@ -384,6 +395,7 @@
                         <input class="form-input"
                         type="text"
                         name="user-name"
+                        required
                         >
                         <svg class="form-icons">
                             <use href="./images/symbol-defs.svg#icon-user-name-icon"></use>
@@ -396,6 +408,7 @@
                         <span class="input-wrap">
                         <input class="form-input"type="tel"
                         name="user-tel"
+                        required
                         >
                         <svg class="form-icons">
                             <use href="./images/symbol-defs.svg#icon-user-phone-icon"></use>
@@ -415,11 +428,23 @@
                         </span>
                     </label>
                 </div>
-                <div class="modal-field">
+                <div class="modal-textarea">
                     <label class="form-label"><span class="label-text">Комментарий</span>
                     <textarea class=" form-textarea " name="comment " placeholder="Введите текст"></textarea>
                 </label>
                 </div>
+                <div class="Modal-chekbox">
+                    <input type="checkbox" class="form-check visually-hidden" name="policy" value="yes" id="form-check" required>
+                    <label for="form-check" class="check-text">
+                        <span>
+                            <svg class="icon-check">
+                                <use href="./images/symbol-defs.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="check-link">Условия договора</a>
+                    </label>
+                </div>
+                <button type="submit" class="form-submit-button"><span class="form-button-text">Отправить</span></button>
             </form>
         </div>
     </div>
